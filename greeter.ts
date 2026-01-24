@@ -3,7 +3,7 @@ class Student {
   constructor(
     public firstName: string,
     public middleInitial: string,
-    public lastName: string
+    public lastName: string,
   ) {
     this.fullName = firstName + " " + middleInitial + " " + lastName;
   }
@@ -19,5 +19,7 @@ function greeter(person: Person) {
 }
 
 let user = new Student("Jane", "M.", "User");
+
+let usernameTest: string = "Alice";
 
 document.body.textContent = greeter(user);

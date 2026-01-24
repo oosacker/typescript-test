@@ -1,5 +1,19 @@
+"use strict";
+class Student {
+    firstName;
+    middleInitial;
+    lastName;
+    fullName;
+    constructor(firstName, middleInitial, lastName) {
+        this.firstName = firstName;
+        this.middleInitial = middleInitial;
+        this.lastName = lastName;
+        this.fullName = firstName + " " + middleInitial + " " + lastName;
+    }
+}
 function greeter(person) {
     return "Hello, " + person.firstName + " " + person.lastName;
 }
-var user = { firstName: "Jane", lastName: "User" };
+let user = new Student("Jane", "M.", "User");
+let usernameTest = "Alice";
 document.body.textContent = greeter(user);
